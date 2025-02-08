@@ -104,8 +104,8 @@ $ pip install requests
 
 3. Set Up API Keys
 Create an .env file and add:  
-OPENWEATHER_API_KEY=your_api_key_here  
-SPOONACULAR_API_KEY=your_api_key_here  
+OPENWEATHER_API_KEY=your_key_here  
+SPOONACULAR_API_KEY=your_key_here  
 
 4. Train the Model  
 $ rasa train  
