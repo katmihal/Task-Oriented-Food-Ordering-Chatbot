@@ -94,3 +94,25 @@ Endpoint: https://spoonacular.com/food-api
 | Ensuring natural conversation flow | Used Rasa's rules and stories to guide interactions smoothly. |
 
 
+## 🔑 Setup Instructions
+
+1. Clone the Repository
+$ git clone https://github.com/your-repo/chatbot.git
+$ cd chatbot
+
+2. Install Dependencies
+$ pip install rasa
+$ pip install requests
+
+3. Set Up API Keys
+Create an .env file and add:
+OPENWEATHER_API_KEY=your_api_key_here
+SPOONACULAR_API_KEY=your_api_key_here
+
+4. Train the Model
+$ rasa train
+
+5. Run the chatbot
+$ rasa run actions
+$ rasa shell
+
