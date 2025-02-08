@@ -25,7 +25,7 @@ Bot can greet, say goodbye and answer to thank you.
 #### 2. Ordering Drink
 #### 3. Cancel order 
 
-Example Conversation:
+Example 1 of Conversation:
 > **User:** I want to order food.  
 > **Bot:** What food would you like to order? (Pizza, Burger, Salad, etc.)  
 > **User:** Pizza  
@@ -33,5 +33,14 @@ Example Conversation:
 > **User:** Yes, a Cola.  
 > **Bot:** Your Pizza with Cola is being prepared!
 
+Example 2 of Conversation
+> **User:** I want to order food.  
+> **Bot:** What food would you like to order? (Pizza, Burger, Salad, etc.)  
+> **User:** I would like a Burger  
+> **Bot:** Would you like a drink with your meal? (Water, Soda, etc.)  
+> **User:** No, thank you.  
+> **Bot:** Your burger is being prepared!
 
-
+Example 3 of Conversation
+> **User:** Cancel my order.  
+> **Bot:** Your order has been cancelled let me know if you need anything else. 
