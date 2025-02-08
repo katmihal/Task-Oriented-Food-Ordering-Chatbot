@@ -116,7 +116,7 @@ $ rasa shell
 
 ## Dialog Policy Experimentation (Bonus)
 
-Modifications & Rationale
+### Modifications & Rationale
 - Added rules for greeting responses to ensure the bot always acknowledges the user before and after a task.  
 - Modified action to handle weather in 4 different cases to dynamically suggest meals based on weather.  
 Cold weather (<15°C): Suggests warm food and hot drinks.  
@@ -125,7 +125,7 @@ Warm weather (20-30°C): Suggests light food and cold drinks.
 Hot weather (>30°C): Suggests cooling food and frozen drinks.
 -Added new food order phrases: Various phrases like "I need food," "I am starving," "I want to order food," etc., were added to recognize the user's intent to order food. 
 
-Observed Results & Insights
+### Observed Results & Insights
 -More engaging interactions with personalized recommendations.  
 -Users appreciated the answer to "Thank you" sentences, such as "Happy to help".  
 - Variety of food order phrases: The bot now recognizes several different ways users ask for food, such as:  
