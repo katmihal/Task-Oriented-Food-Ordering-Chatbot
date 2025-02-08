@@ -86,9 +86,10 @@ Endpoint: https://spoonacular.com/food-api
 
 ## ⚠️ Challenges & Solutions
 
-| Challenge | Solution | 
-|---------|---------|---------|
+| Challenge | Solution |
+|-----------|----------|
 | Handling missing user input (e.g., missing food type) | Added slot handling and prompts to request missing details. |
-| API failures (e.g., weather API down) | Implemented error handling with fallback messages. | 
-| No information in API (e.g., no weather info for a specific city) | An error message is returned |
+| API failures (e.g., weather API down) | Implemented error handling with fallback messages. |
+| No information in API (e.g., no weather info for a specific city) | An error message is returned. |
+
 
