@@ -17,8 +17,6 @@ The food industry is rapidly adopting AI-driven solutions for customer interacti
 
 ## Implemented Scenarios
 
-Bot can greet, say goodbye and answer to thank you. 
-
 ### 3 Distinct Interaction Scenarios
 
 1. Ordering Food
@@ -97,8 +95,8 @@ Endpoint: https://spoonacular.com/food-api
 ## 🔑 Setup Instructions
 
 1. Clone the Repository
-$ git clone https://github.com/your-repo/chatbot.git  
-$ cd chatbot
+$ git clone $ git clone https://github.com/katmihal/Task-Oriented-Food-Ordering-Chatbot.git   
+$ cd Task-Oriented-Food-Ordering-Chatbot  
 
 2. Install Dependencies
 $ pip install rasa  
@@ -114,5 +112,35 @@ $ rasa train
 
 5. Run the chatbot  
 $ rasa run actions  
-$ rasa shell  
+$ rasa shell
+
+## Dialog Policy Experimentation (Bonus)
+
+Modifications & Rationale
+- Added rules for greeting responses to ensure the bot always acknowledges the user before and after a task.  
+- Modified action to handle weather in 4 different cases to dynamically suggest meals based on weather.  
+Cold weather (<15°C): Suggests warm food and hot drinks.  
+Mild weather (15-20°C): Suggests comfort food and refreshing drinks.  
+Warm weather (20-30°C): Suggests light food and cold drinks.  
+Hot weather (>30°C): Suggests cooling food and frozen drinks.
+-Added new food order phrases: Various phrases like "I need food," "I am starving," "I want to order food," etc., were added to recognize the user's intent to order food. 
+
+Observed Results & Insights
+-More engaging interactions with personalized recommendations.  
+-Users appreciated the answer to "Thank you" sentences, such as "Happy to help".  
+- Variety of food order phrases: The bot now recognizes several different ways users ask for food, such as:  
+"I need food"  
+"I am starving"  
+"I want to order food" etc.
+Users are no longer limited to just one phrase to request food, which enhances the natural flow of conversation and improves user experience.  
+
+## 📢 Future Improvements
+1. Adding payment processing for food orders.
+2. Expanding recipe database for nutrient information (e.g. calories, proteins, fat etc.).
+3. Adding expected preparation time of the meal.
+
+## 📌 Conclusion
+
+This chatbot successfully demonstrates a task-oriented dialog system with real-world data integrations. 
+It enhances user experience by dynamically responding to food orders, weather inquiries, and recipe searches.
 
