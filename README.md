@@ -99,7 +99,7 @@ $ git clone $ git clone https://github.com/katmihal/Task-Oriented-Food-Ordering-
 $ cd Task-Oriented-Food-Ordering-Chatbot  
 
 2. Install Dependencies
-$ pip install rasa  
+$ pip install rasa    
 $ pip install requests
 
 3. Set Up API Keys
