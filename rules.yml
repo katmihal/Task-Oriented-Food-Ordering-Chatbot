@@ -1,0 +1,62 @@
+version: "3.1"
+
+rules:
+  - rule: Start food order
+    steps:
+      - intent: order_food
+      - action: utter_ask_food_type
+
+  - rule: Ask for drink after food order
+    steps:
+      - intent: inform
+        entities:
+          - food_type
+      - action: utter_ask_drink
+
+  - rule: Confirm food and drink order
+    steps:
+      - intent: inform
+        entities:
+          - drink
+      - slot_was_set:
+          - food_type
+          - drink
+      - action: utter_order_confirmation
+
+  - rule: Confirm weather-based meal order
+    steps:
+      - intent: affirm
+      - slot_was_set:
+          - food_type
+          - drink
+      - action: utter_order_confirmation
+
+  - rule: Cancel order only when requested
+    steps:
+      - intent: cancel_order
+      - action: utter_cancel_order
+  
+  - rule: Show the menu
+    steps:
+      - intent: ask_menu
+      - action: action_show_menu
+
+  - rule: Respond to greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Respond to goodbye after confirmation
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  
+  - rule: Respond to weather inquiry
+    steps:
+      - intent: ask_weather
+      - action: action_get_weather
+
+  - rule: Respond to thank you
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
