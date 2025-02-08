@@ -91,5 +91,6 @@ Endpoint: https://spoonacular.com/food-api
 | Handling missing user input (e.g., missing food type) | Added slot handling and prompts to request missing details. |
 | API failures (e.g., weather API down) | Implemented error handling with fallback messages. |
 | No information in API (e.g., no weather info for a specific city) | An error message is returned. |
+| Ensuring natural conversation flow | Used Rasa's rules and stories to guide interactions smoothly. |
 
 
