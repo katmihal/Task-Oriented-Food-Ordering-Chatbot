@@ -17,10 +17,20 @@ The food industry is rapidly adopting AI-driven solutions for customer interacti
 
 ## Implemented Scenarios
 
+Bot can greet, say goodbye and answer to thank you. 
+
 ### 3 Distinct Interaction Scenarios
 
-#### Ordering Food
-#### Ordering Drink
-#### Cancel order 
+#### 1. Ordering Food
+#### 2. Ordering Drink
+#### 3. Cancel order 
+
+Example Conversation:
+User: I want to order food.
+Bot: What food would you like to order? (Pizza, Burger, Salad, Souvlaki etc.)
+User: Pizza
+Bot: Would you like a drink with your meal? (Water, Soda, etc.)
+User: Yes, a Cola.
+Bot: Your Pizza with Cola is being prepared!
 
 
