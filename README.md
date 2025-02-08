@@ -76,12 +76,12 @@ Example 3 of Conversation
   
 ## 🔗 Integrated Data Sources
 
-1. OpenWeather API (for weather-based meal suggestions)
-Why? Provides real-time weather data to help suggest suitable meals.
+1. OpenWeather API (for weather-based meal suggestions)  
+Why? Provides real-time weather data to help suggest suitable meals.  
 Endpoint: https://openweathermap.org/api
 
-## 2. 2️⃣ Spoonacular API (for recipe recommendations)
-Why? Enables searching for recipes based on user-provided ingredients.
+2. Spoonacular API (for recipe recommendations)  
+Why? Enables searching for recipes based on user-provided ingredients.  
 Endpoint: https://spoonacular.com/food-api
 
 ## ⚠️ Challenges & Solutions
