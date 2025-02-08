@@ -15,5 +15,12 @@ The food industry is rapidly adopting AI-driven solutions for customer interacti
 - Offer instant recipe suggestions for users interested in cooking at home.
 - Showcase the power of task-oriented dialog systems using Rasa.
 
+## Implemented Scenarios
+
+### 3 Distinct Interaction Scenarios
+
+#### Ordering Food
+#### Ordering Drink
+#### Cancel order 
 
 
