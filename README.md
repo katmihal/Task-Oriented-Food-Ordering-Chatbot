@@ -94,25 +94,25 @@ Endpoint: https://spoonacular.com/food-api
 
 ## 🔑 Setup Instructions
 
-1. Clone the Repository
-$ git clone $ git clone https://github.com/katmihal/Task-Oriented-Food-Ordering-Chatbot.git   
-$ cd Task-Oriented-Food-Ordering-Chatbot  
+1. Clone the Repository  
+$ git clone $ git clone https://github.com/katmihal/Task-Oriented-Food-Ordering-Chatbot.git     
+$ cd Task-Oriented-Food-Ordering-Chatbot    
 
-2. Install Dependencies
-$ pip install rasa    
-$ pip install requests
+2. Install Dependencies  
+$ pip install rasa      
+$ pip install requests  
 
-3. Set Up API Keys
-Create an .env file and add:  
-OPENWEATHER_API_KEY=your_key_here  
-SPOONACULAR_API_KEY=your_key_here  
+3. Set Up API Keys  
+Create an .env file and add:    
+OPENWEATHER_API_KEY=your_key_here    
+SPOONACULAR_API_KEY=your_key_here    
 
-4. Train the Model  
-$ rasa train  
+4. Train the Model    
+$ rasa train    
 
-5. Run the chatbot  
-$ rasa run actions  
-$ rasa shell
+5. Run the chatbot    
+$ rasa run actions    
+$ rasa shell  
 
 ## Dialog Policy Experimentation (Bonus)
 
