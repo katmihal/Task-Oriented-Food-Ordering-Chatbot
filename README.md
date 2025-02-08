@@ -122,12 +122,12 @@ $ rasa shell
 Cold weather (<15°C): Suggests warm food and hot drinks.  
 Mild weather (15-20°C): Suggests comfort food and refreshing drinks.  
 Warm weather (20-30°C): Suggests light food and cold drinks.  
-Hot weather (>30°C): Suggests cooling food and frozen drinks.
--Added new food order phrases: Various phrases like "I need food," "I am starving," "I want to order food," etc., were added to recognize the user's intent to order food. 
+Hot weather (>30°C): Suggests cooling food and frozen drinks.  
+- Added new food order phrases: Various phrases like "I need food," "I am starving," "I want to order food," etc., were added to recognize the user's intent to order food. 
 
 ### Observed Results & Insights
--More engaging interactions with personalized recommendations.  
--Users appreciated the answer to "Thank you" sentences, such as "Happy to help".  
+- More engaging interactions with personalized recommendations.  
+- Users appreciated the answer to "Thank you" sentences, such as "Happy to help".  
 - Variety of food order phrases: The bot now recognizes several different ways users ask for food, such as:  
 "I need food"  
 "I am starving"  
