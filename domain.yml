@@ -1,0 +1,85 @@
+version: '3.1'
+intents:
+- affirm
+- ask_menu
+- bot_challenge
+- cancel_order
+- deny
+- goodbye
+- greet
+- inform
+- thank_you
+- order_food
+- ask_weather
+- ask_recipe 
+
+responses:
+  utter_greet:
+  - text: Hello! How can I help you today?
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_goodbye:
+  - text: Goodbye! Enjoy your meal!
+  utter_thank_you:
+  - text: You're welcome!
+  - text: No problem!
+  - text: My pleasure!
+  - text: Happy to help!
+  utter_ask_food_type:
+  - text: What food would you like to order? (e.g., Pizza, Burger, Salad, Souvlaki)
+  utter_ask_drink:
+  - text: Would you like a drink with your meal? (e.g., Water, Soda, Juice, Cola)
+  utter_order_confirmation:
+  - text: Your {food_type} with {drink} is being prepared!
+  utter_order_confirmation_without_drink:
+  - text: Your {food_type} is being prepared!
+  utter_cancel_order:
+  - text: Your order has been canceled. Let me know if you need anything else!
+  utter_recipe_suggestion:
+  - text: "Here is a recipe I found for you: {recipe_url}"
+  utter_suggestion_rejected:
+    - text: "No problem! Here’s the menu for you to choose from."
+
+entities:
+- food_type
+- drink
+- city
+- recipe_ingredients
+
+slots:
+  food_type:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: food_type
+  drink:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: drink
+  city:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: city
+  recipe_ingredients:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: recipe_ingredients
+
+
+actions:
+- action_get_weather
+- utter_greet
+- action_show_menu
+- utter_ask_food_type
+- utter_ask_drink
+- utter_suggestion_rejected
+- action_get_recipe
+- utter_recipe_suggestion
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

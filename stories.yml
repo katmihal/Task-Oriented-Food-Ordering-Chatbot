@@ -1,0 +1,81 @@
+stories:
+  - story: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: Order food with drink
+    steps:
+      - intent: order_food
+      - action: utter_ask_food_type
+      - intent: inform
+        entities:
+          - food_type: "Pizza"
+      - action: utter_ask_drink
+      - intent: inform
+        entities:
+          - drink: "Water"
+      - action: utter_order_confirmation
+
+  - story: Accept bot's meal suggestion
+    steps:
+    - intent: ask_weather
+    - action: action_get_weather
+    - intent: affirm
+    - action: utter_order_confirmation
+
+  - story: Reject bot's meal suggestion and check menu
+    steps:
+    - intent: ask_weather
+    - action: action_get_weather
+    - intent: deny
+    - action: utter_suggestion_rejected
+    - action: action_show_menu
+
+  - story: Order food without drink
+    steps:
+      - intent: order_food
+      - action: utter_ask_food_type
+      - intent: inform
+        entities:
+          - food_type
+      - action: utter_ask_drink
+      - intent: deny
+      - action: utter_order_confirmation_without_drink
+
+  - story: Cancel order when explicitly requested
+    steps:
+      - intent: order_food
+      - action: utter_ask_food_type
+      - intent: inform
+        entities:
+          - food_type: "Salad"
+      - action: utter_ask_drink
+      - intent: cancel_order
+      - action: utter_cancel_order
+
+  - story: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  
+  - story: Weather inquiry
+    steps:
+      - intent: ask_weather
+      - action: action_get_weather
+      - intent: inform
+        entities:
+          - city: "Athens"
+      - action: action_get_weather
+  
+  - story: Find recipe based on ingredient
+    steps:
+      - intent: ask_recipe
+        entities:
+          - recipe_ingredients: "tomato"
+      - action: action_get_recipe
+  
+  - story: User checks if bot is human
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot

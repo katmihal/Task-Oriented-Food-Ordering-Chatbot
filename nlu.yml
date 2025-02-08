@@ -1,0 +1,113 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - take care
+- intent: affirm
+  examples: |
+    - yes
+    - sure
+    - absolutely
+    - correct
+    - i would love that
+- intent: thank_you
+  examples: |
+    - thank you
+    - thanks
+    - thx
+    - appreciate it
+    - thanks a lot
+    - many thanks
+- intent: order_food
+  examples: |
+    - I want to order food
+    - Can I order some food?
+    - I need food
+    - Order food
+    - Get me some food
+    - I want to eat something
+    - Can I get a meal?
+    - I'd like to order something to eat
+    - Food, please
+    - I am hungry
+    - I am starving
+- intent: inform
+  examples: |
+    - I want [pizza](food_type)
+    - Get me a [burger](food_type)
+    - [Pasta](food_type), please
+    - I would like a [salad](food_type)
+    - I will have a [sandwich](food_type)
+    - I want [sushi](food_type)
+    - Make it a [steak](food_type)
+    - I’d like a [pizza](food_type)
+    - A [burger](food_type) sounds good
+    - I want a [steak](food_type) with fries
+    - Can I have a [sandwich](food_type)?
+    - I’ll take a [pasta](food_type)
+    - I want [water](drink)
+    - Get me a [cola](drink)
+    - [Juice](drink), please
+    - I would like [soda](drink)
+    - I'll take a [lemonade](drink)
+    - Just a [water](drink), thanks
+    - I want [souvlaki](food_type)
+    - Get me a [souvlaki](food_type)
+    - I’d like a [souvlaki](food_type)
+    - Cola, please! [Cola](drink)
+    - A [Bagel](food_type), please
+- intent: deny
+  examples: |
+    - No
+    - No, thanks
+    - No, thank you
+    - Not now
+    - I don't want a drink
+    - No drink for me
+    - Skip the drink
+    - I don't need a drink
+- intent: cancel_order
+  examples: |
+    - Cancel my order
+    - I want to cancel
+    - Stop my order
+    - Can I cancel my order?
+    - I changed my mind, cancel it
+- intent: ask_menu
+  examples: |
+    - What’s on the menu?
+    - What can I order?
+    - Show me the menu
+    - What food do you have?
+    - Tell me what dishes are available
+    - Do you have a menu?
+    - List all available meals
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you human?
+    - am I talking to a bot?
+- intent: ask_weather
+  examples: |
+    - how hot is it today?
+    - what's the weather like?
+    - tell me the weather
+    - how is the weather in [Athens](city)?
+    - what's the temperature in [London](city)?
+    - is it cold in [New York](city)?
+- intent: ask_recipe  
+  examples: |
+    - Find me a recipe with [tomato](recipe_ingredients)
+    - Do you have a recipe with [chicken](recipe_ingredients)?
+    - I want a recipe with [onion, garlic](recipe_ingredients)
+    - Get me a recipe for [pasta](recipe_ingredients)
