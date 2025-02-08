@@ -60,13 +60,9 @@ Example of Conversation
 
 Example 1 of Conversation
 > **User:** What's the weather in Athens?
->
 > **Bot:** The current temperature in Athens is 5°C with clouds. How about ordering warm soup with a nice mulled wine? Would you like to place an order for this meal?
-> 
 > **User:** Yes sure.
-> 
 > **Bot:** Your warm soup with mulled wine is being prepared.
-> 
 
 Example 2 of Conversation
 > **User:** What's the weather in Athens?
