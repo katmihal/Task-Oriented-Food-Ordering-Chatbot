@@ -72,4 +72,23 @@ Example 2 of Conversation
 
 Example 3 of Conversation
 > **User:** Find me a recipe with tomato.  
-> **Bot:**  Here is a recipe for Tomato Pasta: [Recipe Link]  
+> **Bot:**  Found this recipe for you: {recipe_title}. You can see it here: {recipe_url}
+  
+## 🔗 Integrated Data Sources
+
+1. OpenWeather API (for weather-based meal suggestions)
+Why? Provides real-time weather data to help suggest suitable meals.
+Endpoint: https://openweathermap.org/api
+
+## 2. 2️⃣ Spoonacular API (for recipe recommendations)
+Why? Enables searching for recipes based on user-provided ingredients.
+Endpoint: https://spoonacular.com/food-api
+
+## ⚠️ Challenges & Solutions
+
+| Challenge | Solution | 
+|---------|---------|---------|
+| Handling missing user input (e.g., missing food type) | Added slot handling and prompts to request missing details. |
+| API failures (e.g., weather API down) | Implemented error handling with fallback messages. | 
+| No information in API (e.g., no weather info for a specific city) | An error message is returned |
+
