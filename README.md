@@ -95,7 +95,7 @@ Endpoint: https://spoonacular.com/food-api
 ## 🔑 Setup Instructions
 
 1. Clone the Repository  
-$ git clone $ git clone https://github.com/katmihal/Task-Oriented-Food-Ordering-Chatbot.git     
+$ git clone https://github.com/katmihal/Task-Oriented-Food-Ordering-Chatbot.git     
 $ cd Task-Oriented-Food-Ordering-Chatbot    
 
 2. Install Dependencies  
